@@ -274,10 +274,8 @@ const GOAL_ITEMS=[
   {ri:12, name:'قضاء الفروض', unit:'فرض', base:1, baseLabel:'فرض واحد = 3 نقاط', opts:['فرض','فرضان','٣ فروض','٥ فروض'], optVals:[1,2,3,5], note:'كل فرض = 3 نقاط'},
   {ri:13, name:'ركعات ضحى', unit:'ركعة', base:6, baseLabel:'٦ ركعات', opts:['٢ ركعة','٤ ركعات','٦ ركعات','٨ ركعات'], optVals:[2,4,6,8]},
   {ri:14, name:'ركعات أوابين', unit:'ركعة', base:4, baseLabel:'٤ ركعات', opts:['٢ ركعة','٤ ركعات','٦ ركعات'], optVals:[2,4,6]},
-  {ri:15, name:'أذكار بعد الصلاة', unit:'نقطة', base:5, baseLabel:'5 نقاط', opts:['5','10','15'], optVals:[5,10,15], noCustom:false},
   {ri:16, name:'صلاة على الرسول ﷺ', unit:'مرة', base:200, baseLabel:'٢٠٠ (١٠٠ صباح + ١٠٠ مساء)', opts:['١٠٠','٢٠٠','٣٠٠'], optVals:[100,200,300], note:'الكمية تكون بمضاعفات ١٠٠'},
   {ri:17, name:'استغفار', unit:'مرة', base:200, baseLabel:'٢٠٠ (١٠٠ صباح + ١٠٠ مساء)', opts:['١٠٠','٢٠٠','٣٠٠'], optVals:[100,200,300], note:'الكمية تكون بمضاعفات ١٠٠'},
-  {ri:18, name:'لا إله إلا الله وحده...', unit:'نقطة', base:10, baseLabel:'10 نقاط', opts:['10','15','20'], optVals:[10,15,20], noCustom:false},
 ];
 
 const sk=(r,d)=>r+'-'+d;
@@ -484,7 +482,8 @@ function build(){
     const note=IBADA_NOTES[r.ibada]||r.note||'';
     const noteHtml=note?'<div style="color:#b8860b;font-size:9px;line-height:1.4;margin-top:2px">'+note+'</div>':'';
     const badilHtml=r.badil?'<div style="color:#b8860b;font-size:9px;line-height:1.4;margin-top:2px">🔄 '+r.badil+'</div>':'';
-    ti.innerHTML='<div>'+r.ibada+'</div>'+noteHtml+badilHtml;
+    const editTag=!r.fixed?'<span style="font-size:8px;color:#b8860b;background:#fff8e1;border:1px solid #f0c040;border-radius:3px;padding:1px 3px;margin-right:3px;vertical-align:middle">✏️</span>':'';
+    ti.innerHTML='<div>'+editTag+r.ibada+'</div>'+noteHtml+badilHtml;
     tr.appendChild(ti);
     const tp=document.createElement('td');tp.className='pc';
     tp.textContent=r.pts;
