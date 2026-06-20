@@ -110,31 +110,30 @@ tr.tr-day td.pts-total{background:var(--primary-dark);font-size:11px;font-weight
     <div class="sec-title">الأذكار</div>
     <div class="row"><span>أذكار الصباح / المساء / النوم</span><span>5 نقاط</span></div>
     <div class="sec-title">القرآن</div>
-    <div class="row"><span>الورد الصباحي</span><span>5 نقاط — بديله: ٣× أسماء الله الحسنى مع دعائها</span></div>
-    <div class="row"><span>الورد المسائي</span><span>5 نقاط — بديله: ٣× أسماء الله الحسنى مع دعائها</span></div>
     <div class="row"><span>البقرة كاملة</span><span>20 نقطة — بديله: ورد يا لطيف</span></div>
     <div class="row"><span>سورة الأنعام كاملة</span><span>20 نقطة — بديله: صيغ الحوقلة</span></div>
     <div class="row"><span>سورة الضحى (٤١ مرة)</span><span>15 نقطة</span></div>
     <div class="row"><span>مراجعة قرآن</span><span>5 نقاط</span></div>
+    <div class="row" style="background:#fff8e1;border:1px solid #f0c040"><span>⭐ قراءة جزء (بونص)</span><span style="color:#b8860b">10 نقاط</span></div>
     <div class="sec-title">القيام</div>
-    <div class="row"><span>ركعتين توبة</span><span>3 نقاط — بديله: القراءة من كتاب لا يرد القدر إلا الدعاء</span></div>
-    <div class="row"><span>صلاة التسابيح</span><span>10 نقاط — بديله: القراءة من كتاب لا يرد القدر إلا الدعاء</span></div>
+    <div class="row"><span>ركعتين توبة</span><span>5 نقاط — بديله: القراءة من كتاب لا يرد القدر إلا الدعاء</span></div>
+    <div class="row"><span>صلاة التسابيح</span><span>5 نقاط — بديله: القراءة من كتاب لا يرد القدر إلا الدعاء</span></div>
     <div class="row"><span>ركعتين بسورة البينة</span><span>3 نقاط — بديله: القراءة من كتاب لا يرد القدر إلا الدعاء</span></div>
-    <div class="row"><span>قضاء الفروض — كل فرض</span><span>3 نقاط — بديله: القراءة من كتاب لا يرد القدر إلا الدعاء</span></div>
+    <div class="row"><span>صلاة الحاجة</span><span>10 نقاط</span></div>
     <div class="sec-title">الصلاة</div>
     <div class="row"><span>ركعات ضحى</span><span>6 نقاط — بديله: صيغ الاستغفار</span></div>
-    <div class="row"><span>ركعات أوابين</span><span>4 نقاط — بديله: صيغ الاستغفار</span></div>
+    <div class="row"><span>ركعات أوابين</span><span>6 نقاط — بديله: صيغ الاستغفار</span></div>
     <div class="row"><span>أذكار بعد الصلاة (المعوذات، خواتيم البقرة، الباقيات الصالحات)</span><span>5 نقاط</span></div>
     <div class="sec-title">الذكر</div>
-    <div class="row"><span>صلاة على الرسول</span><span>10 نقاط/100</span></div>
-    <div class="row"><span>استغفار</span><span>10 نقاط/100</span></div>
+    <div class="row"><span>الورد الصباحي</span><span>5 نقاط</span></div>
+    <div class="row"><span>الورد المسائي</span><span>5 نقاط</span></div>
     <div class="row"><span>لا إله إلا الله وحده... (١٠٠ صباح + ١٠٠ مساء)</span><span>10 نقاط</span></div>
     <div class="sec-title">صدقة</div>
     <div class="row"><span>صدقة يومية</span><span>1 نقطة</span></div>
-    <div class="sec-title">تزكية</div>
-    <div class="row"><span>دراسة حلقة البناء</span><span>5 نقاط</span></div>
-    <div class="row"><span>تحضير لجنتي</span><span>5 نقاط</span></div>
-    <div class="row"><span>قراءة ٣ صفحات من الكتاب</span><span>5 نقاط</span></div>
+    <div class="sec-title">تزكية — بونص ⭐</div>
+    <div class="row" style="background:#fff8e1;border:1px solid #f0c040"><span>⭐ دراسة حلقة البناء</span><span style="color:#b8860b">5 نقاط</span></div>
+    <div class="row" style="background:#fff8e1;border:1px solid #f0c040"><span>⭐ تحضير لجنتي</span><span style="color:#b8860b">5 نقاط</span></div>
+    <div class="row" style="background:#fff8e1;border:1px solid #f0c040"><span>⭐ قراءة ٣ صفحات من الكتاب</span><span style="color:#b8860b">5 نقاط</span></div>
   </div>
 </div>
 
@@ -227,55 +226,49 @@ const ROWS=[
   {cat:'الأذكار',ibada:'أذكار النوم',pts:5,fixed:true},
 
   // القرآن
-  {cat:'القرآن',ibada:'الورد الصباحي',pts:5,fixed:true,badil:'٣× أسماء الله الحسنى مع دعائها'},
-  {cat:'القرآن',ibada:'الورد المسائي',pts:5,fixed:true,badil:'٣× أسماء الله الحسنى مع دعائها'},
   {cat:'القرآن',ibada:'البقرة كاملة',pts:20,badil:'ورد يا لطيف'},
   {cat:'القرآن',ibada:'سورة الأنعام كاملة',pts:20,badil:'صيغ الحوقلة'},
   {cat:'القرآن',ibada:'سورة الضحى (٤١ مرة)',pts:15,fixed:true},
   {cat:'القرآن',ibada:'مراجعة قرآن',pts:5,fixed:true},
+  {cat:'القرآن',ibada:'قراءة جزء',pts:10,fixed:true,bonus:true},
   // القيام
-  {cat:'القيام',ibada:'ركعتين توبة',pts:3,fixed:true,badil:'القراءة من <a href="https://drive.google.com/file/d/1Ao1UT7sIYM6rmvo-AVKBYDAybJsvD7tx/view?usp=sharing" target="_blank" rel="noopener" style="color:#0f4a28;text-decoration:underline;font-weight:700">كتاب لا يرد القدر إلا الدعاء</a>'},
-  {cat:'القيام',ibada:'صلاة التسابيح',pts:10,fixed:true,badil:'القراءة من <a href="https://drive.google.com/file/d/1Ao1UT7sIYM6rmvo-AVKBYDAybJsvD7tx/view?usp=sharing" target="_blank" rel="noopener" style="color:#0f4a28;text-decoration:underline;font-weight:700">كتاب لا يرد القدر إلا الدعاء</a>'},
+  {cat:'القيام',ibada:'ركعتين توبة',pts:5,fixed:true,badil:'القراءة من <a href="https://drive.google.com/file/d/1Ao1UT7sIYM6rmvo-AVKBYDAybJsvD7tx/view?usp=sharing" target="_blank" rel="noopener" style="color:#0f4a28;text-decoration:underline;font-weight:700">كتاب لا يرد القدر إلا الدعاء</a>'},
+  {cat:'القيام',ibada:'صلاة التسابيح',pts:5,fixed:true,badil:'القراءة من <a href="https://drive.google.com/file/d/1Ao1UT7sIYM6rmvo-AVKBYDAybJsvD7tx/view?usp=sharing" target="_blank" rel="noopener" style="color:#0f4a28;text-decoration:underline;font-weight:700">كتاب لا يرد القدر إلا الدعاء</a>'},
   {cat:'القيام',ibada:'ركعتين بسورة البينة',pts:3,fixed:true,badil:'القراءة من <a href="https://drive.google.com/file/d/1Ao1UT7sIYM6rmvo-AVKBYDAybJsvD7tx/view?usp=sharing" target="_blank" rel="noopener" style="color:#0f4a28;text-decoration:underline;font-weight:700">كتاب لا يرد القدر إلا الدعاء</a>'},
-  {cat:'القيام',ibada:'قضاء الفروض',pts:3,fixed:false,badil:'القراءة من <a href="https://drive.google.com/file/d/1Ao1UT7sIYM6rmvo-AVKBYDAybJsvD7tx/view?usp=sharing" target="_blank" rel="noopener" style="color:#0f4a28;text-decoration:underline;font-weight:700">كتاب لا يرد القدر إلا الدعاء</a>'},
+  {cat:'القيام',ibada:'صلاة الحاجة',pts:10,fixed:true},
   // الصلاة
   {cat:'الصلاة',ibada:'ركعات ضحى',pts:6,fixed:false,badil:'صيغ الاستغفار'},
-  {cat:'الصلاة',ibada:'ركعات أوابين',pts:4,fixed:false,badil:'صيغ الاستغفار'},
+  {cat:'الصلاة',ibada:'ركعات أوابين',pts:6,fixed:false,badil:'صيغ الاستغفار'},
   {cat:'الصلاة',ibada:'أذكار بعد الصلاة (المعوذات، خواتيم البقرة، الباقيات الصالحات)',pts:5},
   // الذكر
-  {cat:'الذكر',ibada:'صلاة على الرسول ',pts:10,note:'١٠٠ صباحاً و١٠٠ مساءً'},
-  {cat:'الذكر',ibada:'استغفار ',pts:10,note:'١٠٠ صباحاً و١٠٠ مساءً'},
+  {cat:'الذكر',ibada:'الورد الصباحي',pts:5,fixed:true},
+  {cat:'الذكر',ibada:'الورد المسائي',pts:5,fixed:true},
   {cat:'الذكر',ibada:'لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير',pts:10,note:'١٠٠ مرة صباحاً + ١٠٠ مرة مساءً'},
   // صدقة
   {cat:'صدقة',ibada:'صدقة يومية',pts:1,fixed:true},
   // تزكية
-  {cat:'تزكية',ibada:'دراسة حلقة البناء',pts:5,fixed:true},
-  {cat:'تزكية',ibada:'تحضير لجنتي',pts:5,fixed:true},
-  {cat:'تزكية',ibada:'قراءة ٣ صفحات من الكتاب',pts:5,fixed:true},
+  {cat:'تزكية',ibada:'دراسة حلقة البناء',pts:5,fixed:true,bonus:true},
+  {cat:'تزكية',ibada:'تحضير لجنتي',pts:5,fixed:true,bonus:true},
+  {cat:'تزكية',ibada:'قراءة ٣ صفحات من الكتاب',pts:5,fixed:true,bonus:true},
 ];
 
 const IBADA_NOTES={
-  'صلاة على الرسول ١٠٠':'١٠٠ صباحاً و١٠٠ مساءً',
-  'استغفار ١٠٠':'١٠٠ صباحاً و١٠٠ مساءً',
   'لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير':'١٠٠ مرة صباحاً + ١٠٠ مرة مساءً',
 };
 
-const DAYS=10,SK='ibada_v14',NK='ibada_name_v14',EDITK='ibada_edit_v14',GOALK='ibada_goals_v4';
+const DAYS=10,SK='ibada_v15',NK='ibada_name_v15',EDITK='ibada_edit_v15',GOALK='ibada_goals_v5';
 let state={},editedPts={},personalGoals={};
 
 // ri indices:
 // 0=أذكار صباح, 1=أذكار مساء, 2=أذكار نوم
-// 3=ورد صباحي, 4=ورد مسائي, 5=بقرة, 6=أنعام, 7=ضحى٤١, 8=مراجعة
-// 9=توبة, 10=تسابيح, 11=بينة, 12=قضاء فروض
-// 13=ضحى, 14=أوابين, 15=أذكار بعد الصلاة
-// 16=صلاة على الرسول, 17=استغفار, 18=لا إله إلا الله
-// 19=صدقة, 20=بناء, 21=لجنة, 22=كتاب
+// 3=بقرة, 4=أنعام, 5=ضحى٤١, 6=مراجعة, 7=جزء(بونص)
+// 8=توبة, 9=تسابيح, 10=بينة, 11=حاجة
+// 12=ضحى, 13=أوابين, 14=أذكار بعد الصلاة
+// 15=ورد صباحي, 16=ورد مسائي, 17=لا إله إلا الله
+// 18=صدقة, 19=بناء, 20=لجنة, 21=كتاب
 const GOAL_ITEMS=[
-  {ri:12, name:'قضاء الفروض', unit:'فرض', base:1, baseLabel:'فرض واحد = 3 نقاط', opts:['فرض','فرضان','٣ فروض','٥ فروض'], optVals:[1,2,3,5], note:'كل فرض = 3 نقاط'},
-  {ri:13, name:'ركعات ضحى', unit:'ركعة', base:6, baseLabel:'٦ ركعات', opts:['٢ ركعة','٤ ركعات','٦ ركعات','٨ ركعات'], optVals:[2,4,6,8]},
-  {ri:14, name:'ركعات أوابين', unit:'ركعة', base:4, baseLabel:'٤ ركعات', opts:['٢ ركعة','٤ ركعات','٦ ركعات'], optVals:[2,4,6]},
-  {ri:16, name:'صلاة على الرسول ﷺ', unit:'مرة', base:200, baseLabel:'٢٠٠ (١٠٠ صباح + ١٠٠ مساء)', opts:['١٠٠','٢٠٠','٣٠٠'], optVals:[100,200,300], note:'الكمية تكون بمضاعفات ١٠٠'},
-  {ri:17, name:'استغفار', unit:'مرة', base:200, baseLabel:'٢٠٠ (١٠٠ صباح + ١٠٠ مساء)', opts:['١٠٠','٢٠٠','٣٠٠'], optVals:[100,200,300], note:'الكمية تكون بمضاعفات ١٠٠'},
+  {ri:12, name:'ركعات ضحى', unit:'ركعة', base:6, baseLabel:'٦ ركعات', opts:['٢ ركعة','٤ ركعات','٦ ركعات','٨ ركعات'], optVals:[2,4,6,8]},
+  {ri:13, name:'ركعات أوابين', unit:'ركعة', base:6, baseLabel:'٦ ركعات', opts:['٢ ركعة','٤ ركعات','٦ ركعات'], optVals:[2,4,6]},
 ];
 
 const sk=(r,d)=>r+'-'+d;
@@ -482,11 +475,13 @@ function build(){
     const note=IBADA_NOTES[r.ibada]||r.note||'';
     const noteHtml=note?'<div style="color:#b8860b;font-size:9px;line-height:1.4;margin-top:2px">'+note+'</div>':'';
     const badilHtml=r.badil?'<div style="color:#b8860b;font-size:9px;line-height:1.4;margin-top:2px">🔄 '+r.badil+'</div>':'';
+    const bonusTag=r.bonus?'<span style="font-size:9px;color:#b8860b;font-weight:700;margin-left:3px">⭐</span>':'';
     const editTag=!r.fixed?'<span style="display:inline-block;width:6px;height:6px;background:#b8860b;border-radius:50%;margin-left:4px;vertical-align:middle"></span>':'';
-    ti.innerHTML='<div>'+editTag+r.ibada+'</div>'+noteHtml+badilHtml;
+    ti.innerHTML='<div>'+editTag+bonusTag+r.ibada+'</div>'+noteHtml+badilHtml;
     tr.appendChild(ti);
     const tp=document.createElement('td');tp.className='pc';
-    tp.textContent=r.pts;
+    if(r.bonus)tp.style.color='#b8860b';
+    tp.textContent=r.bonus?'⭐'+r.pts:r.pts;
     tr.appendChild(tp);
     for(let d=1;d<=DAYS;d++){
       const tc=document.createElement('td');tc.className='cell';tc.id='cell_'+ri+'_'+d;
@@ -500,7 +495,7 @@ function build(){
   // صف المجموع
   const tf=document.createElement('tr');tf.className='tr-day';
   const lbl=document.createElement('td');lbl.className='lbl';lbl.colSpan=2;lbl.textContent='مجموع اليوم (أساسي)';tf.appendChild(lbl);
-  const ptsTotal=ROWS.reduce((s,r)=>s+(r.pts>0?r.pts:0),0);
+  const ptsTotal=ROWS.reduce((s,r)=>s+(r.pts>0&&!r.bonus?r.pts:0),0);
   const ptsTd=document.createElement('td');ptsTd.className='pts-total';ptsTd.textContent=ptsTotal;tf.appendChild(ptsTd);
   for(let d=1;d<=DAYS;d++){const td=document.createElement('td');td.id='dt'+d;tf.appendChild(td);}
   tb.appendChild(tf);
@@ -516,12 +511,14 @@ function build(){
 }
 
 function getBasePtsForCell(ri,d){
+  if(ROWS[ri].bonus)return 0;
   const key=ri+'_'+d;
   const originalPts=ROWS[ri].pts;
   if(editedPts[key]!==undefined)return Math.min(editedPts[key],originalPts);
   return originalPts;
 }
 function getBonusPtsForCell(ri,d){
+  if(ROWS[ri].bonus)return ROWS[ri].pts;
   const key=ri+'_'+d;
   const originalPts=ROWS[ri].pts;
   if(editedPts[key]!==undefined)return Math.max(0,editedPts[key]-originalPts);
@@ -531,7 +528,7 @@ function getBonusPtsForCell(ri,d){
 }
 function getDayBase(d){let t=0;ROWS.forEach((_,ri)=>{if((state[sk(ri,d)]||0)===1)t+=getBasePtsForCell(ri,d);});return t;}
 function getDayBonus(d){let t=0;ROWS.forEach((_,ri)=>{if((state[sk(ri,d)]||0)===1)t+=getBonusPtsForCell(ri,d);});return t;}
-function calcDayMax(){return ROWS.reduce((s,r)=>s+(r.pts>0?r.pts:0),0);}
+function calcDayMax(){return ROWS.reduce((s,r)=>s+(r.pts>0&&!r.bonus?r.pts:0),0);}
 
 function recalc(){
   let grandBase=0,grandBonus=0;
